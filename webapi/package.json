@@ -1,0 +1,22 @@
+{
+  "name": "webapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "npx jest --coverage"
+  },
+  "author": "Robinson <robinsondotnet@hotmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "sequelize": "^5.21.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "sequelize-cli": "^5.5.1",
+    "supertest": "^4.0.2"
+  }
+}
