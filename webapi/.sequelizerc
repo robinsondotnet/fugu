@@ -1,0 +1,12 @@
+const path = require('path');
+
+const base = path.resolve(__dirname, 'db');
+
+const config = {
+  config: path.resolve(base, 'config/index.js'),
+  'models-path': path.resolve(base, 'models'),
+  'seeders-path': path.resolve(base, 'seeders'),
+  'migrations-path': path.resolve(base, 'migrations'),
+};
+
+module.exports = config;

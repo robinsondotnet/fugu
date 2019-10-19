@@ -1,15 +1,10 @@
+'use strict';
 module.exports = (sequelize, DataTypes) => {
-    return sequelize.define(
-        'Recipes',
-        {
-            recipeId: {
-                type: DataTypes.UUIDV4,
-                onDelete: 'cascade'
-            },
-            name: {
-                type: DataTypes.STRING,
-                defaultValue: ''
-            }
-        }
-    );
+  const Recipes = sequelize.define('Recipes', {
+    name: DataTypes.STRING
+  }, {});
+  Recipes.associate = function(models) {
+    // associations can be defined here
+  };
+  return Recipes;
 };

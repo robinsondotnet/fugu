@@ -7,6 +7,9 @@ const config = {
         dialect: 'sqlite',
         storage: path.resolve(base, 'dev.sqlite3'),
     },
+    docker: {
+
+    },
     test: {
         dialect: 'sqlite',
         storage: path.resolve(base, 'test.sqlite3'),
