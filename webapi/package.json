@@ -4,9 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "npx jest --coverage"
+    "test": "npx jest --coverage",
+    "start": "npx sequelize db:migrate; npx sequelize db:seed:all; node server.js"
   },
-  "author": "Robinson <robinsondotnet@hotmail.com>",
+  "author": "robinsondotnet <robinsondotnet@hotmail.com>",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
