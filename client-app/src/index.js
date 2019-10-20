@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import DefaultLayout from './components/core/layout/Default';
-import { Provider } from 'react-redux';
+import App from './core/App';
+import {Provider} from 'react-redux';
 import store from './store';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <Provider store={store}>
-        <DefaultLayout />
+        <App />
     </Provider>
     , document.getElementById('root'));
 
